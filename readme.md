@@ -1,0 +1,1 @@
+用python脚本调用Everything执行搜索
