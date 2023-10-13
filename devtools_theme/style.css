@@ -1,0 +1,27 @@
+* {
+    -webkit-font-smoothing: antialiased !important;
+}
+
+:host-context(.platform-linux) .monospace,
+:host-context(.platform-mac) .monospace,
+:host-context(.platform-linux) .source-code,
+:host-context(.platform-mac) .source-code,
+.platform-linux .monospace,
+.platform-mac .monospace,
+.platform-linux .source-code,
+.platform-mac .source-code {
+    font-size: 11px !important;
+    font-family: "Code New Roman", Consolas, "Ubuntu Mono", monospace !important;
+}
+
+.monospace,
+.source-code {
+    font-size: 11px !important;
+    font-family: "Code New Roman", Consolas, "Ubuntu Mono", monospace !important;
+}
+
+::shadow .monospace,
+::shadow .source-code {
+    font-size: 11px !important;
+    font-family: "Code New Roman", Consolas, "Ubuntu Mono", monospace !important;
+}
