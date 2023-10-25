@@ -12,7 +12,10 @@ export NODE_REPL_HISTORY="$XDG_DATA_HOME/node_repl_history"
 export WGETRC="$XDG_CONFIG_HOME/wgetrc"
 export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME/npm/npmrc"
 export RUSTUP_HOME="$XDG_DATA_HOME/rustup"
-alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
+
+if [ -f "$XDG_CACHE_HOME/wget-hsts" ] ; then
+    alias wget='wget --hsts-file="$XDG_CACHE_HOME/wget-hsts"'
+fi
 
 # PATH相关
 PATH="/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin"
